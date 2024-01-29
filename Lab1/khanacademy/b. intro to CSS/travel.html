@@ -1,26 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Travel to Exotic Locale</title>
+    <title>Spin-off of "Project: Travel webpage"</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
             background-color: #f8f8f8;
-        }
-
-        header {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1em;
-        }
-
-        h1 {
             color: #333;
+            font-family: Arial, sans-serif;
         }
 
         #main-content {
@@ -33,75 +22,85 @@
 
         .highlight {
             color: #e44d26;
-            font-weight: bold;
+        }
+
+        #heading1 {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .info-paragraph {
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .image-container {
+            text-align: center;
+            margin-bottom: 10px;
         }
 
         .destination-image {
             max-width: 100%;
             height: auto;
             border-radius: 8px;
-            margin-bottom: 10px;
-        }
-
-        p {
-            line-height: 1.6;
-            color: #333;
-        }
-
-        ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        ul li {
-            padding-left: 20px;
-            position: relative;
-            margin-bottom: 10px;
-        }
-
-        ul li::before {
-            content: '\2022';
-            color: #e44d26;
-            font-weight: bold;
-            position: absolute;
-            left: 0;
         }
     </style>
 </head>
+
 <body>
 
-    <header>
-        <h1>Travel to Exotic Locale</h1>
-    </header>
+    <div id="heading1">
+        <h1>Discover Exotic Places</h1>
+    </div>
 
     <div id="main-content">
 
-        <img class="destination-image" src="url_to_your_image.jpg" alt="Exotic Locale Image">
+        <h2 class="highlight">Thailand</h2>
 
-        <p>Welcome to our travel destination, where breathtaking landscapes and vibrant cultures await your exploration. Whether you're an adventurer, a history enthusiast, or someone seeking relaxation, our destination has something for everyone.</p>
-
-        <h2 class="highlight">Things to See and Do</h2>
-
-        <ul>
-            <li>Explore ancient ruins and historical landmarks.</li>
-            <li>Indulge in local cuisine at charming restaurants.</li>
-            <li>Relax on pristine beaches with crystal-clear waters.</li>
-            <li>Embark on thrilling outdoor activities like hiking and water sports.</li>
-        </ul>
-
-        <h2 class="highlight">Places to Visit</h2>
+        <p class="info-paragraph">Thailand is a Southeast Asian country.
+            It's known for tropical beaches, opulent royal palaces, ancient ruins and ornate temples displaying figures
+            of Buddha.</p>
 
         <ul>
-            <li>Charming Old Town with narrow cobblestone streets.</li>
-            <li>Adventurous nature reserves and wildlife sanctuaries.</li>
-            <li>Picturesque viewpoints offering panoramic views.</li>
-            <li>Local markets filled with handmade crafts and souvenirs.</li>
+            <li>Bangkok</li>
+            <li>Pattaya City</li>
         </ul>
 
-        <p>Plan your dream vacation to this exotic locale and create memories that will last a lifetime.</p>
+        <h2 class="highlight">Vietnam</h2>
+
+        <p class="info-paragraph">Vietnam is a Southeast Asian country known for its beaches, rivers, Buddhist pagodas
+            and bustling cities. Hanoi, the capital, pays homage to the nation’s iconic Communist-era leader, Ho Chi
+            Minh, via a huge marble mausoleum.</p>
+
+        <ol>
+            <li>Hanoi</li>
+            <li>Da Nang</li>
+        </ol>
+
+        <div class="image-container">
+            <img class="destination-image"
+                src="https://images.newscientist.com/wp-content/uploads/2023/06/22150608/halong-bay-vietnam-marina-lobato-kg7poxbbfns-unsplash-scaled.jpg?width=1200"
+                alt="Image 1">
+        </div>
+
+        <div class="image-container">
+            <img class="destination-image"
+                src="https://deih43ym53wif.cloudfront.net/hanoi-vietnam-shutterstock_447620650_1a2da18caf.jpeg"
+                alt="Image 2">
+        </div>
+
+        <div class="image-container">
+            <img class="destination-image"
+                src="https://assets3.thrillist.com/v1/image/3127246/1200x630/flatten;crop_down;webp=auto;jpeg_quality=70"
+                alt="Image 3">
+        </div>
 
     </div>
 
 </body>
+
 </html>
