@@ -3,33 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Facebook Login page</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Facebook - log in or sign up</title>
 </head>
 <body>
-    <div class="container flex">
-        <div class="facebook-page flex">
-            <div class="text">
-                <h1>facebook</h1>
-                <p>Connect with friends and the world</p>
-                <p>around you on Facebook</p>
-            </div>
-            <form action="#">
-                <input type="email" placeholder="Email or phone number" required>
-                <input type="password" placeholder="Password" required>
-                <div class="link">
-                    <button type="submit" class="login">Log In</button>
-                    <a href="#" class="forgot">Forgot password?</a>
-                </div>
-                <hr>
-                <div class="button">
-                    <a href="#">Create new account</a>
-                </div>
-            </form>
-            <div class="additional-text">
-                <a href="#" class="underline-hover">Create a Page</a> for a celebrity, brand or business.
-            </div>
+    <div class="box">
+        <div class="title-box">
+          <img src="img/logo.png" alt="Facebook">
+          <p>Connect with friends and the world around you on Facebook.</p>
         </div>
-    </div>
+        <div class="form-box">
+          <form action="#">
+            <input type="text" placeholder="Email address or phone number">
+            <input type="password" placeholder="Password">
+            <button type="submit">Log In</button>
+            <a href="#">Forgotten Password</a>
+          </form>
+          <hr>
+          <div class="create-btn">
+            <a href="#" target="_blank">Create New Account</a>
+          </div>
+        </div>
+      </div>
 </body>
 </html>
