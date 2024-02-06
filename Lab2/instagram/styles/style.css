@@ -126,7 +126,7 @@
   }
   
   footer li {
-    margin: 10px;
+    margin: 5px;
   }
   
   select {
@@ -138,6 +138,9 @@
     display: flex;
     justify-content: center;
     margin: 20px 0 40px;;
+  }
+  .language-copyright-container p {
+    font-size: 12px;
   }
   
   @media screen and (min-width: 451px) {
