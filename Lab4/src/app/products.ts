@@ -3,27 +3,102 @@ export interface Product {
   name: string;
   price: number;
   description: string;
+  rating: number,
+  images: string[],
+  link: string,
 }
 
 export const products = [
   {
     id: 1,
-    name: 'Phone XL',
-    price: 799,
-    description: 'A large phone with one of the best screens'
+    name: 'NOW Vitamin D3',
+    price: 4890,
+    description: 'Полезный витамин',
+    rating: 4.2,
+    images: ['https://resources.cdn-kaspi.kz/img/m/p/h1f/hce/69165915701278.jpg?format=gallery-large', 'https://resources.cdn-kaspi.kz/img/m/p/h69/hb5/69165917929502.jpg?format=gallery-large'],
+    link: 'https://kaspi.kz/shop/p/now-vitamin-d-3-5000-iu-kapsuly-120-sht-108959948/?c=750000000',
   },
   {
     id: 2,
-    name: 'Phone Mini',
-    price: 699,
-    description: 'A great phone with one of the best cameras'
+    name: '21st Century минерал',
+    price: 3548,
+    description: 'Полезные минералы',
+    rating: 5.0,
+    images: ['https://resources.cdn-kaspi.kz/img/m/p/h7b/h32/64006498877470.jpg?format=gallery-large', 'https://resources.cdn-kaspi.kz/img/m/p/h87/h47/64006501367838.jpg?format=gallery-large', 'https://resources.cdn-kaspi.kz/img/m/p/h77/h57/64006504841246.jpg?format=gallery-large'],
+    link: 'https://kaspi.kz/shop/p/21st-century-mineral-calcium-magnesium-zinc-d3-90-tabletok-100505310/?c=750000000',
   },
   {
     id: 3,
-    name: 'Phone Standard',
-    price: 299,
-    description: ''
-  }
+    name: 'California Gold Nutrition Омега 3',
+    price: 3788,
+    description: 'Назначение: для улучшения состояния кожи',
+    rating: 5.0,
+    images: ['https://resources.cdn-kaspi.kz/img/m/p/h0f/hd1/63863964336158.jpg?format=gallery-large', 'https://resources.cdn-kaspi.kz/img/m/p/ha9/h78/63863967154206.jpg?format=gallery-large', 'https://resources.cdn-kaspi.kz/img/m/p/h01/h68/63863970431006.jpg?format=gallery-large'],
+    link: 'https://kaspi.kz/shop/p/california-gold-nutrition-omega-3-100-kapsul-omega-3-premium-fish-oil-100638544/?c=750000000',
+  },
+  {
+    id: 4,
+    name: 'Жидкий йод плюс раствор 59 мл',
+    price: 4569,
+    description: 'Тип: минерально-витаминный комплекс',
+    rating: 4.9,
+    images: ['https://resources.cdn-kaspi.kz/img/m/p/h34/hf4/64030324490270.jpg?format=gallery-large', 'https://resources.cdn-kaspi.kz/img/m/p/hd4/h18/64030326456350.jpg?format=gallery-large'],
+    link: 'https://kaspi.kz/shop/p/zhidkii-iod-pljus-rastvor-59-ml-101135465/?c=750000000',
+  },
+  {
+    id: 5,
+    name: 'Gold C Vitamin',
+    price: 2900,
+    description: 'Страна производитель: США',
+    rating: 3.5,
+    images: ['https://resources.cdn-kaspi.kz/img/m/p/h44/h81/84638793465886.png?format=gallery-large', 'https://resources.cdn-kaspi.kz/img/m/p/he8/h73/84638793498654.png?format=gallery-large'],
+    link: 'https://kaspi.kz/shop/p/california-gold-nutrition-vitamin-gold-c-vitamin-c-1000-mg-60-kapsul-100569146/?c=750000000',
+  },
+  {
+    id: 6,
+    name: 'Nutraxin Collagen 30',
+    price: 3599,
+    description: 'Регистрационный статус: не является лекарственным средством',
+    rating: 2.2,
+    images: ['https://resources.cdn-kaspi.kz/img/m/p/hd9/h76/64950049374238.jpg?format=gallery-large', 'https://resources.cdn-kaspi.kz/img/m/p/hb5/h30/64950051635230.jpg?format=gallery-large'],
+    link: 'https://kaspi.kz/shop/p/nutraxin-bad-nutraxin-collagen-30-tabletok-104186090/?c=750000000',
+  },
+  {
+    id: 7,
+    name: 'Hema-Plex Iron',
+    price: 7300,
+    description: 'Назначение: для восполнения дефицита железа',
+    rating: 4.8,
+    images: ['https://resources.cdn-kaspi.kz/img/m/p/hb0/h94/63997289529374.jpg?format=gallery-large', 'https://resources.cdn-kaspi.kz/img/m/p/he8/h6f/63997291888670.jpg?format=gallery-large'],
+    link: 'https://kaspi.kz/shop/p/nature-s-plus-hema-plex-iron-kompleks-s-zhelezom-kapsuly-60-sht-101262413/?c=750000000',
+  },
+  {
+    id: 8,
+    name: 'Глицин Актив',
+    price: 189,
+    description: 'Назначение: для нервной системы',
+    rating: 5.0,
+    images: ['https://resources.cdn-kaspi.kz/img/m/p/h31/ha3/68314620919838.jpg?format=gallery-large'],
+    link: 'https://kaspi.kz/shop/p/farmgrupp-ooo-glitsin-aktiv-100-mg-tabletki-50-sht-101113562/?c=750000000',
+  },
+  {
+    id: 9,
+    name: 'Магний В6',
+    price: 1399,
+    description: 'Для кого: универсальные',
+    rating: 2.9,
+    images: ['https://resources.cdn-kaspi.kz/img/m/p/hd2/haf/63990614851614.jpg?format=gallery-large', 'https://resources.cdn-kaspi.kz/img/m/p/hb5/h71/63990617866270.jpg?format=gallery-large', 'https://resources.cdn-kaspi.kz/img/m/p/h24/h35/63990622060574.jpg?format=gallery-large'],
+    link: 'https://kaspi.kz/shop/p/evalar-zao-vitamin-magnii-v6-30-tabletki-100729384/?c=750000000',
+  },
+  {
+    id: 10,
+    name: 'Аминосорб',
+    price: 8963,
+    description: 'Назначение: общеукрепляющее средство',
+    rating: 4.0,
+    images: ['https://resources.cdn-kaspi.kz/img/m/p/h59/hd1/64226024063006.jpg?format=gallery-large', 'https://resources.cdn-kaspi.kz/img/m/p/h00/hc6/64226061484062.jpg?format=gallery-large', 'https://resources.cdn-kaspi.kz/img/m/p/h8e/h5f/64226064531486.jpg?format=gallery-large'],
+    link: 'https://kaspi.kz/shop/p/aminosorb-prirodnyi-sorbent-sirop-300-ml-101125414/?c=750000000',
+  },
 ];
 
 
