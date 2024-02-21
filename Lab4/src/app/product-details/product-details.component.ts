@@ -17,6 +17,18 @@ export class ProductDetailsComponent implements OnInit{
       private cartService: CartService
   ) { }
 
+  nextImage() {
+    if (this.product && this.product.images.length > 1) {
+      this.product.currentImageIndex = (this.product.currentImageIndex + 1) % this.product.images.length;
+    }
+  }
+
+  prevImage() {
+    if (this.product && this.product.images.length > 1) {
+      this.product.currentImageIndex = (this.product.currentImageIndex - 1 + this.product.images.length) % this.product.images.length;
+    }
+  }
+
 
   addToCart(product: Product) {
     this.cartService.addToCart(product);

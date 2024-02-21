@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { products } from '../products';
+import { products, Product } from '../products';
 
 @Component({
   selector: 'app-product-list',
@@ -10,17 +10,22 @@ import { products } from '../products';
 export class ProductListComponent {
   products = [...products];
 
-  shareWhatsApp(productName: string, productLink: string) {
-    const shareMessage = `${productName} - ${productLink}`;
-    const whatsappLink = `https://api.whatsapp.com/send?text=${encodeURIComponent(shareMessage)}`;
-    window.open(whatsappLink, '_blank');
-  }
-
-  shareTelegram(productName: string, productLink: string) {
+  share(productName: string, productLink: string) {
     const shareMessage = `${productName} - ${productLink}`;
     const telegramLink = `https://t.me/share/url?url=${encodeURIComponent(shareMessage)}`;
     window.open(telegramLink, '_blank');
+  }
 
+  nextImage(product: Product) {
+    if (product.images.length > 1) {
+      product.currentImageIndex = (product.currentImageIndex + 1) % product.images.length;
+    }
+  }
+
+  prevImage(product: Product) {
+    if (product.images.length > 1) {
+      product.currentImageIndex = (product.currentImageIndex - 1 + product.images.length) % product.images.length;
+    }
   }
 
   onNotify() {

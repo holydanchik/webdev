@@ -1,8 +1,8 @@
-<h2>Products</h2>
+<h2>Products Gallery</h2>
 
-<div *ngFor="let product of products">
-    <div class="product-card">
-        <img [src]="product.images[0]" alt="Product Image" class="product-image">
+<div class="gallery">
+    <div *ngFor="let product of products" class="gallery-item">
+        <img [src]="product.images[product.currentImageIndex]" alt="Product Image" class="product-image">
 
         <div class="product-details">
             <h3>
@@ -13,14 +13,19 @@
                     {{ product.name }}
                 </a>
             </h3>
-
             <p *ngIf="product.description">Description: {{ product.description }}</p>
             <p>Rating: {{ product.rating }}</p>
-            <p>Price: ${{ product.price }}</p>
+            <p>Price: ₸{{ product.price }}</p>
 
+            <!-- Gallery navigation buttons -->
+            <div class="gallery-buttons">
+                <button type="button" (click)="prevImage(product)">Previous</button>
+                <button type="button" (click)="nextImage(product)">Next</button>
+            </div>
+
+            <!-- Share button -->
             <div class="share-buttons">
-                <button type="button" (click)="shareWhatsApp(product.name, product.link)">Share by WhatsApp</button>
-                <button type="button" (click)="shareTelegram(product.name, product.link)">Share by Telegram</button>
+                <button type="button" (click)="share(product.name, product.link)">Share by Telegram</button>
             </div>
         </div>
     </div>
