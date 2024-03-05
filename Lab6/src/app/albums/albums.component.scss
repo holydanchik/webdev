@@ -1,32 +1,41 @@
-ul {
-  list-style: none;
-  padding: 0;
+.album-container {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 20px;
 }
 
-li {
-  margin-bottom: 10px;
+.album-container h2 {
+  margin-bottom: 5px;
 }
 
-a {
-  color: #333;
-  text-decoration: none;
-  font-weight: bold;
-  cursor: pointer;
+.button-container {
+  margin-top: 10px;
 }
 
-a:hover {
-  color: #555;
-}
-
-button {
-  background-color: #ff0000;
-  color: #fff;
-  border: none;
+.delete-button,
+.details-button {
   padding: 5px 10px;
-  border-radius: 5px;
+  margin-right: 10px;
   cursor: pointer;
 }
 
-button:hover {
-  background-color: #cc0000;
+.delete-button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
 }
+
+.delete-button:hover {
+  background-color: #bd2130;
+}
+
+.details-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+}
+
+.details-button:hover {
+  background-color: #0056b3;
+}
+
