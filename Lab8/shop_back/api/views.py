@@ -10,7 +10,7 @@ def product_list(request):
     return JsonResponse(data)
 
 
-def product_detail(request, product_id):
+def product_detail(request, product_id):  # Change 'id' to 'product_id'
     product = get_object_or_404(Product, id=product_id)
     data = {'product': {
         'name': product.name,
@@ -29,7 +29,7 @@ def category_list(request):
     return JsonResponse(data)
 
 
-def category_detail(request, category_id):
+def category_detail(request, category_id):  # Use 'category_id' instead of 'id'
     category = get_object_or_404(Category, id=category_id)
     data = {'category': {
         'name': category.name,
@@ -39,6 +39,7 @@ def category_detail(request, category_id):
 
 def category_products(request, category_id):
     category = get_object_or_404(Category, id=category_id)
-    products = category.products.all()
+    products = category.product_set.all()
     data = {'products': list(products.values())}
     return JsonResponse(data)
+
